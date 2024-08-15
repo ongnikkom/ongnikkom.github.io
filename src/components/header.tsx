@@ -11,7 +11,7 @@ export default function Header() {
             <AvatarFallback>NO</AvatarFallback>
           </Avatar>
           <div>
-            <a href="/">
+            <a href="/portfolio">
               <h1 className="font-bold">Nikko Ong</h1>
             </a>
 
