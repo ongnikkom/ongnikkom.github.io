@@ -1,0 +1,13 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  body {
+    @apply bg-[#F7F9FC] dark:bg-[#0A0A0A] dark:text-[#F6F6F6] font-poppins;
+  }
+
+  .main-container {
+    @apply flex flex-col min-h-screen;
+  }
+}
