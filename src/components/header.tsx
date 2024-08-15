@@ -7,7 +7,7 @@ export default function Header() {
       <div className="container flex items-center justify-between">
         <div className="flex items-center gap-4">
           <Avatar className="border-2 dark:border-[#272727] size-12">
-            <AvatarImage src="/assets/img/pp.jpg" alt="@ongnikkom" />
+            <AvatarImage src="/portfolio/assets/img/pp.jpg" alt="@ongnikkom" />
             <AvatarFallback>NO</AvatarFallback>
           </Avatar>
           <div>
