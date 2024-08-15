@@ -1,0 +1,228 @@
+@font-face {
+  font-family: "Gilroy";
+  src: url("gilroy-heavy-webfont.woff2") format("woff2"),
+    url("gilroy-heavy-webfont.woff") format("woff");
+  font-weight: 700;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Gilroy";
+  src: url("gilroy-bold-webfont.woff2") format("woff2"),
+    url("gilroy-bold-webfont.woff") format("woff");
+  font-weight: 600;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Gilroy";
+  src: url("gilroy-medium-webfont.woff2") format("woff2"),
+    url("gilroy-medium-webfont.woff") format("woff");
+  font-weight: 500;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Gilroy";
+  src: url("gilroy-regular-webfont.woff2") format("woff2"),
+    url("gilroy-regular-webfont.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Vogatron";
+  src: url("vogatron-semibold-webfont.woff2") format("woff2"),
+    url("vogatron-semibold-webfont.woff") format("woff");
+  font-weight: 600;
+  font-style: normal;
+}
+
+.ether-takeover-banner-body {
+  margin: 0;
+  padding: 0;
+}
+
+.ether-takeover-banner-body img {
+  transition: all 0.2s ease;
+}
+
+.ether-takeover-banner a {
+  background: none;
+  border: none;
+  outline: inherit;
+  padding: 0;
+  text-decoration: none;
+}
+
+.ether-takeover-banner .btn-gradient {
+  background: linear-gradient(
+    51deg,
+    rgba(255, 122, 0, 0) 0%,
+    rgba(255, 122, 0, 0.8) 25%,
+    rgba(255, 95, 4, 0.8) 75%,
+    rgba(255, 209, 119, 0) 100%
+  );
+  color: white;
+  border-radius: 20px;
+  display: block;
+  font-family: "Gilroy";
+  font-weight: 600;
+  letter-spacing: 6.4px;
+  height: 38px;
+  padding: 2px;
+}
+
+.ether-takeover-banner .btn-gradient__inner {
+  align-items: center;
+  background-color: rgba(0, 0, 0, 0.85);
+  border-radius: 20px;
+  display: flex;
+  height: 100%;
+  justify-content: center;
+  overflow: hidden;
+  padding: 0 24px;
+  text-transform: uppercase;
+  text-align: center;
+}
+
+.ether-takeover-banner h1,
+.ether-takeover-banner h2,
+.ether-takeover-banner h3,
+.ether-takeover-banner h4,
+.ether-takeover-banner h5,
+.ether-takeover-banner h6 {
+  font-family: "Gilroy";
+  color: #fff;
+  margin: 0;
+}
+
+.ether-takeover-banner {
+  overflow: hidden;
+  margin: 0 auto;
+}
+
+.ether-takeover-banner,
+.ether-takeover-banner * {
+  box-sizing: border-box;
+}
+
+.ether-takeover-banner {
+  background-color: #000;
+}
+
+.ether-takeover-banner {
+  background-image: url(./ether-desktop-bg.jpg);
+  background-size: cover;
+  background-position: center;
+  padding: 55px 22px 0;
+  position: relative;
+}
+
+h2.ether-takeover-banner__heading {
+  text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  font-family: "Vogatron";
+  font-size: 13px;
+  font-weight: 600;
+  text-align: center;
+  text-transform: uppercase;
+  letter-spacing: 13px;
+
+  background: linear-gradient(51deg, rgba(184,184,184,1) 0%, rgba(244,244,244,1) 100%);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  backdrop-filter: blur(2px);
+}
+
+.ether-takeover-banner__title {
+  text-align: center;
+}
+
+.ether-takeover-banner__title img {
+  margin: 0 auto;
+  max-width: 400px;
+  width: 100%;
+}
+
+.ether-takeover-banner__pack {
+  text-align: center;
+}
+
+.ether-takeover-banner__cta {
+  margin: 63px auto 68px;
+  max-width: 320px;
+}
+
+.ether-takeover-banner__pack img {
+  margin: 0 auto;
+  max-width: 280px;
+  width: 100%;
+}
+
+.ether-takeover-banner__description {
+  color: white;
+  font-family: "Vogatron";
+  font-size: 13px;
+  text-align: center;
+  text-transform: uppercase;
+  position: absolute;
+  text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  bottom: 15px;
+  left: 50%;
+  transform: translateX(-50%);
+  letter-spacing: 6px;
+  width: 100%;
+
+  background: linear-gradient(51deg, rgba(184,184,184,1) 0%, rgba(244,244,244,1) 100%);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  backdrop-filter: blur(2px);
+}
+
+@media (min-width: 768px) {
+  h2.ether-takeover-banner__heading {
+    letter-spacing: 26px;
+  }
+
+  .ether-takeover-banner__title img {
+    max-width: 724px;
+  }
+
+  .ether-takeover-banner__pack {
+    margin-top: -64px;
+  }
+
+  .ether-takeover-banner__pack img {
+    max-width: 334px;
+  }
+
+  .ether-takeover-banner__cta {
+    margin: 78px auto 80px;
+    max-width: 496px;
+  }
+
+  .ether-takeover-banner__description {
+    bottom: 21px;
+    letter-spacing: 13px;
+  }
+}
+
+@media (min-width: 1200px) {
+  .ether-takeover-banner__title img {
+    max-width: 1100px;
+  }
+
+  .ether-takeover-banner__pack {
+    margin-top: -84px;
+  }
+
+  .ether-takeover-banner__cta {
+    margin: 78px auto 88px;
+  }
+
+  .ether-takeover-banner__description {
+    bottom: 25px;
+  }
+}

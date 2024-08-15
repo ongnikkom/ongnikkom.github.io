@@ -1,0 +1,188 @@
+@font-face {
+  font-family: Chakra;
+  src: url(chakrapetch-semibold-webfont.woff2)
+      format("woff2"),
+    url(chakrapetch-semibold-webfont.woff)
+      format("woff");
+  font-weight: 600;
+  font-style: normal;
+}
+.c-link-takeover-banner-body {
+  font-family: Chakra, system-ui, -apple-system, BlinkMacSystemFont, Segoe UI,
+    Roboto, Oxygen, Ubuntu, Cantarell, Open Sans, Helvetica Neue, sans-serif;
+  font-weight: 400;
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+.c-link-takeover-banner-body * {
+  box-sizing: border-box;
+}
+.c-link-takeover-banner-body h1,
+.c-link-takeover-banner-body h2,
+.c-link-takeover-banner-body h3,
+.c-link-takeover-banner-body h4,
+.c-link-takeover-banner-body h5,
+.c-link-takeover-banner-body h6,
+.c-link-takeover-banner-body p {
+  color: #fff;
+  margin: 0;
+}
+.c-link-takeover-banner {
+  background-image: url(bg-mobile.png);
+  background-position: bottom center;
+  background-size: cover;
+  padding: 24px;
+  position: relative;
+  overflow: hidden;
+}
+@media (min-width: 1024px) {
+  .c-link-takeover-banner {
+    background-image: url(bg-desktop.png);
+    padding: 108px 24px 50px;
+  }
+}
+.c-link-takeover-banner video {
+  height: 100%;
+  left: 0;
+  object-fit: fill;
+  position: absolute;
+  top: 0;
+  width: 100%;
+}
+.c-link-takeover-banner__tagline {
+  align-items: center;
+  color: #fff;
+  display: flex;
+  font-size: 10px;
+  font-weight: 500;
+  gap: 8px;
+  justify-content: center;
+  letter-spacing: 6px;
+  line-height: 120%;
+  text-align: center;
+  text-transform: uppercase;
+  position: relative;
+  z-index: 50;
+}
+@media (min-width: 640px) {
+  .c-link-takeover-banner__tagline {
+    font-size: 16px;
+  }
+}
+@media (min-width: 1024px) {
+  .c-link-takeover-banner__tagline {
+    letter-spacing: 12px;
+  }
+}
+@media (min-width: 1280px) {
+  .c-link-takeover-banner__tagline {
+    font-size: 31px;
+    letter-spacing: 16px;
+  }
+}
+.c-link-takeover-banner__hero {
+  margin: -20px 0 -50px;
+  position: relative;
+  text-align: center;
+  z-index: 20;
+}
+@media (min-width: 1024px) {
+  .c-link-takeover-banner__hero {
+    margin: -54px 0 -77px;
+  }
+}
+.c-link-takeover-banner__hero__mobile {
+  width: 100%;
+  max-width: 520px;
+}
+@media (min-width: 1024px) {
+  .c-link-takeover-banner__hero__mobile {
+    display: none;
+  }
+}
+.c-link-takeover-banner__hero__desktop {
+  display: none;
+  max-width: 1377px;
+  margin: 0 auto;
+  width: 100%;
+}
+@media (min-width: 1024px) {
+  .c-link-takeover-banner__hero__desktop {
+    display: block;
+  }
+}
+.c-link-takeover-banner__desc {
+  margin: 16px auto;
+  max-width: 380px;
+  position: relative;
+  text-align: center;
+  z-index: 20;
+}
+.c-link-takeover-banner__desc > p {
+  font-size: 14px;
+  font-weight: 400;
+  letter-spacing: 1px;
+  line-height: 120%;
+}
+@media (min-width: 640px) {
+  .c-link-takeover-banner__desc > p {
+    font-size: 18px;
+    line-height: normal;
+  }
+}
+@media (min-width: 1024px) {
+  .c-link-takeover-banner__desc {
+    margin: 16px auto 48px;
+    max-width: 100%;
+  }
+}
+@media (min-width: 1280px) {
+  .c-link-takeover-banner__desc {
+    margin: -24px 0 48px;
+    max-width: 100%;
+  }
+  .c-link-takeover-banner__desc > p {
+    font-size: 21px;
+  }
+}
+.c-link-takeover-banner__btn {
+  background: linear-gradient(180deg, #0e53b3, #2cb7f6, #0e53b3);
+  border: 0.5px solid #6ccfee;
+  border-radius: 74px;
+  box-shadow: 0 0 40px #8698f4, 0 0 0.25px 1.25px #5088c9 inset,
+    3px 5px 2px -4.75px #fff inset, 1.25px 1.5px #318adcbf inset,
+    0 4.75px 0.25px -2.5px #fbfbfb inset, 1px 1px 3px 3px #005fcd inset,
+    0 -3px 1px #11087280 inset, 2.5px -2px 3px #0e53b3 inset,
+    0 -3px 3px 1px #fff5dd1a inset;
+  align-items: center;
+  color: #f1edee;
+  display: flex;
+  font-size: 20px;
+  font-weight: 600;
+  height: 50px;
+  justify-content: center;
+  margin: 0 auto;
+  max-width: 406px;
+  padding: 10px;
+  position: relative;
+  text-decoration: none;
+  z-index: 20;
+}
+@media (min-width: 1024px) {
+  .c-link-takeover-banner__btn {
+    font-size: 26px;
+    height: 60px;
+    max-width: 438px;
+  }
+}
+.c-link-takeover-banner__bottom-gradient {
+  background: #020202;
+  background: linear-gradient(0deg, #020202, #0000);
+  bottom: 0;
+  height: 380px;
+  left: 0;
+  position: absolute;
+  width: 100%;
+  z-index: 10;
+}

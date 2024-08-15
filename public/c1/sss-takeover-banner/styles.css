@@ -1,0 +1,260 @@
+@font-face {
+  font-family: "Gilroy";
+  src: url("gilroy-heavy-webfont.woff2") format("woff2"),
+    url("gilroy-heavy-webfont.woff") format("woff");
+  font-weight: 700;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Gilroy";
+  src: url("gilroy-bold-webfont.woff2") format("woff2"),
+    url("gilroy-bold-webfont.woff") format("woff");
+  font-weight: 600;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Gilroy";
+  src: url("gilroy-medium-webfont.woff2") format("woff2"),
+    url("gilroy-medium-webfont.woff") format("woff");
+  font-weight: 500;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Gilroy";
+  src: url("gilroy-regular-webfont.woff2") format("woff2"),
+    url("gilroy-regular-webfont.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Vogatron";
+  src: url("vogatron-semibold-webfont.woff2") format("woff2"),
+    url("vogatron-semibold-webfont.woff") format("woff");
+  font-weight: 600;
+  font-style: normal;
+}
+
+.sss-takeover-banner-body {
+  background-color: #02002e;
+  margin: 0;
+  padding: 0;
+}
+
+.sss-takeover-banner h1,
+.sss-takeover-banner h2,
+.sss-takeover-banner h3,
+.sss-takeover-banner h4,
+.sss-takeover-banner h5,
+.sss-takeover-banner h6,
+.sss-takeover-banner p {
+  font-family: "Gilroy";
+  color: #fff;
+  margin: 0;
+}
+
+.sss-takeover-banner {
+  overflow: hidden;
+  margin: 0 auto;
+}
+
+.sss-takeover-banner,
+.sss-takeover-banner * {
+  box-sizing: border-box;
+}
+
+.sss-takeover-banner-logo {
+  margin-top: 35px;
+  text-align: center;
+}
+
+.sss-takeover-banner-logo img {
+  margin: 0 auto;
+  max-width: 188px;
+  width: 100%;
+}
+
+.sss-takeover-banner-title {
+  text-align: center;
+}
+
+.sss-takeover-banner-title__mobile {
+  margin: 0 auto;
+  max-width: 520px;
+  width: 100%;
+}
+
+.sss-takeover-banner-products {
+  display: flex;
+  gap: 8px;
+  margin: 0 auto;
+  max-width: 575px;
+  padding: 0 16px;
+}
+
+.sss-takeover-banner-products__item {
+  background: linear-gradient(
+    104deg,
+    rgba(46, 26, 38, 0.6) 13.24%,
+    rgba(20, 11, 42, 0.6) 43.31%,
+    rgba(52, 29, 35, 0.6) 80.72%
+  );
+  backdrop-filter: blur(9px);
+  border-radius: 40px;
+  color: #fff;
+  flex-basis: 33.33%;
+  font-family: "Gilroy";
+  padding: 0 12px 10px;
+  position: relative;
+  text-align: center;
+}
+
+.sss-takeover-banner-products__item--orange-border::before {
+  background: linear-gradient(
+      90deg,
+      rgba(255, 212, 79, 0.8) 0%,
+      rgba(255, 45, 0, 0.8) 100%
+    )
+    border-box;
+  border: 1px solid transparent;
+  border-radius: 40px;
+  content: "";
+  inset: 0;
+  mask-composite: exclude;
+  position: absolute;
+  -webkit-mask: linear-gradient(#fff 0 0) padding-box, linear-gradient(#fff 0 0);
+  -webkit-mask-composite: destination-out;
+}
+
+.sss-takeover-banner-products__item--orange-border
+  .sss-takeover-banner-products__item__discount {
+  background: linear-gradient(
+      90deg,
+      rgba(255, 212, 79, 0.8) 0%,
+      rgba(255, 45, 0, 0.8) 100%
+    )
+    border-box;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.sss-takeover-banner-products__item--blue-border::before {
+  background: linear-gradient(
+      90deg,
+      rgba(3, 100, 233, 0.8) 0%,
+      rgba(4, 187, 253, 0.8) 100%
+    )
+    border-box;
+  border: 1px solid transparent;
+  border-radius: 40px;
+  content: "";
+  inset: 0;
+  mask-composite: exclude;
+  position: absolute;
+  -webkit-mask: linear-gradient(#fff 0 0) padding-box, linear-gradient(#fff 0 0);
+  -webkit-mask-composite: destination-out;
+}
+
+.sss-takeover-banner-products__item--blue-border
+  .sss-takeover-banner-products__item__discount {
+  background: linear-gradient(
+      90deg,
+      rgba(3, 100, 233, 0.8) 0%,
+      rgba(4, 187, 253, 0.8) 100%
+    )
+    border-box;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.sss-takeover-banner-products__item--purple-border::before {
+  background: linear-gradient(
+      90deg,
+      rgba(220, 163, 208, 1) 0%,
+      rgba(117, 53, 212, 1) 100%
+    )
+    border-box;
+  border: 1px solid transparent;
+  border-radius: 40px;
+  content: "";
+  inset: 0;
+  mask-composite: exclude;
+  position: absolute;
+  -webkit-mask: linear-gradient(#fff 0 0) padding-box, linear-gradient(#fff 0 0);
+  -webkit-mask-composite: destination-out;
+}
+
+.sss-takeover-banner-products__item--purple-border
+  .sss-takeover-banner-products__item__discount {
+  background: linear-gradient(
+      90deg,
+      rgba(220, 163, 208, 1) 0%,
+      rgba(117, 53, 212, 1) 100%
+    )
+    border-box;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.sss-takeover-banner-products__item p {
+  margin: 0;
+}
+
+.sss-takeover-banner-products__item__image {
+  text-align: center;
+}
+
+.sss-takeover-banner-products__item img {
+  margin: 0 auto;
+  max-width: 114px;
+  width: 100%;
+}
+
+.sss-takeover-banner-products__item__date {
+  font-size: 24px;
+}
+
+.sss-takeover-banner-products__item__data strong {
+  font-weight: 700;
+}
+
+.sss-takeover-banner-products__item__discount {
+  font-size: 28px;
+  font-weight: 700;
+}
+
+.sss-takeover-banner-cta {
+  background-color: #1649f9;
+  border-radius: 60px;
+  color: #fff;
+  display: block;
+  font-family: Gilroy;
+  font-weight: 600;
+  margin: 20px auto 0;
+  max-width: 346px;
+  padding: 18px 24px;
+  text-align: center;
+  text-decoration: none;
+  width: 100%;
+}
+
+.sss-takeover-banner-title__desktop {
+  display: none;
+  margin: 0 auto;
+  max-width: 1784px;
+  width: 100%;
+}
+
+@media (min-width: 768px) {
+  .sss-takeover-banner-title__mobile {
+    display: none;
+    width: 100%;
+  }
+
+  .sss-takeover-banner-title__desktop {
+    display: block;
+  }
+}

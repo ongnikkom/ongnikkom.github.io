@@ -1,0 +1,287 @@
+@font-face {
+    font-family: "Gilroy";
+    src: url("gilroy-heavy-webfont.woff2") format("woff2"),
+        url("gilroy-heavy-webfont.woff") format("woff");
+    font-weight: 700;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "Gilroy";
+    src: url("gilroy-bold-webfont.woff2") format("woff2"),
+        url("gilroy-bold-webfont.woff") format("woff");
+    font-weight: 600;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "Gilroy";
+    src: url("gilroy-medium-webfont.woff2") format("woff2"),
+        url("gilroy-medium-webfont.woff") format("woff");
+    font-weight: 500;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "Gilroy";
+    src: url("gilroy-regular-webfont.woff2") format("woff2"),
+        url("gilroy-regular-webfont.woff") format("woff");
+    font-weight: normal;
+    font-style: normal;
+}
+
+.c1-takeover-banner a {
+    background: none;
+    border: none;
+    outline: inherit;
+    padding: 0;
+    text-decoration: none;
+}
+
+.c1-takeover-banner .btn-gradient {
+    border-radius: 20px;
+    display: block;
+    height: 38px;
+    padding: 2px;
+}
+
+.c1-takeover-banner .btn-gradient__inner {
+    align-items: center;
+    background-color: #010103;
+    border-radius: 20px;
+    display: flex;
+    height: 100%;
+    justify-content: center;
+    overflow: hidden;
+    padding: 0 24px;
+    text-transform: uppercase;
+}
+
+.c1-takeover-banner .btn-gradient--blue {
+    background: linear-gradient(90deg,
+            rgba(0, 151, 255, 0) 0%,
+            #00e0ff 40%,
+            #219af2 60%,
+            rgba(99, 33, 242, 0) 100%);
+}
+
+.c1-takeover-banner-body {
+    margin: 0;
+    padding: 0;
+}
+
+.c1-takeover-banner {
+    overflow: hidden;
+    margin: 0 auto;
+}
+
+.c1-takeover-banner,
+.c1-takeover-banner * {
+    box-sizing: border-box;
+}
+
+.c1-takeover-banner h1,
+.c1-takeover-banner h2,
+.c1-takeover-banner h3,
+.c1-takeover-banner h4,
+.c1-takeover-banner h5,
+.c1-takeover-banner h6,
+.c1-takeover-banner p,
+.c1-takeover-banner a,
+.c1-takeover-banner small {
+    font-family: "Gilroy";
+    color: #fff;
+    margin: 0;
+}
+
+.c1-takeover-banner {
+    background-color: #000;
+    background-image: url(./bg-mobile.jpg);
+    background-position: center -238px;
+    background-repeat: no-repeat;
+    background-size: 768px;
+    padding: 20px 20px 72px;
+    position: relative;
+}
+
+.c1-takeover-banner .token-falling {
+    pointer-events: none;
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+}
+
+.c1-takeover-banner .token-falling--desktop {
+    display: none;
+}
+
+.c1-takeover-banner .c1-logo {
+    text-align: center;
+}
+
+.c1-takeover-banner .c1-logo img {
+    max-width: 86px;
+}
+
+.c1-takeover-banner .title-container {
+    margin-top: 50px;
+    position: relative;
+    text-align: center;
+}
+
+.c1-takeover-banner .title-container .kicker,
+.c1-takeover-banner .title-container .title {
+    width: 100%;
+}
+
+.c1-takeover-banner .title-container .kicker-desktop,
+.c1-takeover-banner .title-container .title-desktop {
+    display: none;
+}
+
+.c1-takeover-banner .title-container .kicker {
+    display: block;
+    margin: 0 auto;
+    max-width: 360px;
+}
+
+.c1-takeover-banner .title-container .title {
+    display: block;
+    margin: 0 auto;
+    max-width: 448px;
+}
+
+.c1-takeover-banner .images-container {
+    left: -7px;
+    position: relative;
+    text-align: center;
+}
+
+.c1-takeover-banner .images-container img {
+    display: block;
+    margin: 0 auto;
+    max-width: 335px;
+}
+
+.c1-takeover-banner .images-container .bundle {
+    max-width: 618px;
+    width: 100%;
+}
+
+.c1-takeover-banner .images-container .bundle.bundle--desktop {
+    display: none;
+}
+
+.c1-takeover-banner .ctas-container {
+    display: flex;
+    flex-direction: column;
+    font-weight: 600;
+    font-size: 14px;
+    gap: 20px;
+    letter-spacing: 0.125em;
+    margin-top: 20px;
+}
+
+.c1-takeover-banner .ctas-container a {
+    max-width: 438px;
+    margin: 0 auto;
+    text-align: center;
+    width: 100%;
+}
+
+
+@media (min-width: 380px) {
+    .c1-takeover-banner {
+        background-position: center -230px;
+    }
+}
+
+@media (min-width: 420px) {
+    .c1-takeover-banner {
+        background-position: center -200px;
+    }
+}
+
+@media (min-width: 520px) {
+    .c1-takeover-banner {
+        background-position: center -154px;
+    }
+}
+
+@media (min-width: 768px) {
+    .c1-takeover-banner {
+        background-image: url(./bg-desktop.jpg);
+        background-position: center 0;
+        background-size: cover;
+    }
+
+    .c1-takeover-banner .title-container {
+        margin-top: 18px;
+    }
+
+    .c1-takeover-banner .title-container .kicker,
+    .c1-takeover-banner .title-container .title {
+        display: none;
+    }
+
+    .c1-takeover-banner .title-container .kicker-desktop,
+    .c1-takeover-banner .title-container .title-desktop {
+        display: block;
+        margin: 0 auto;
+        width: 100%;
+    }
+
+    .c1-takeover-banner .title-container .kicker-desktop {
+        max-width: 663px;
+    }
+
+    .c1-takeover-banner .images-container {
+        left: -30px;
+        margin-top: -33px;
+    }
+
+    .c1-takeover-banner .images-container .bundle {
+        display: none;
+        margin: 0 auto;
+        max-width: 1022px;
+        width: 100%;
+    }
+
+    .c1-takeover-banner .images-container .bundle.bundle--desktop {
+        display: block;
+    }
+
+    .c1-takeover-banner .ctas-container {
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .c1-takeover-banner .ctas-container a {
+        max-width: 325px;
+    }
+}
+
+@media (min-width: 991px) {
+    .c1-takeover-banner {
+        padding: 20px 20px 68px;
+    }
+
+    .c1-takeover-banner .token-falling--mobile {
+        display: none;
+    }
+
+    .c1-takeover-banner .token-falling--desktop {
+        display: block;
+    }
+
+    .c1-takeover-banner .title-container .title-desktop {
+        max-width: 974px;
+    }
+
+    .c1-takeover-banner .images-container {
+        left: -34px;
+        margin-top: -37px;
+    }
+}

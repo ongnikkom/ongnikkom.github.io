@@ -1,0 +1,211 @@
+@font-face {
+  font-family: "Gilroy";
+  src: url("gilroy-heavy-webfont.woff2") format("woff2"),
+    url("gilroy-heavy-webfont.woff") format("woff");
+  font-weight: 700;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Gilroy";
+  src: url("gilroy-bold-webfont.woff2") format("woff2"),
+    url("gilroy-bold-webfont.woff") format("woff");
+  font-weight: 600;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Gilroy";
+  src: url("gilroy-medium-webfont.woff2") format("woff2"),
+    url("gilroy-medium-webfont.woff") format("woff");
+  font-weight: 500;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Gilroy";
+  src: url("gilroy-regular-webfont.woff2") format("woff2"),
+    url("gilroy-regular-webfont.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Vogatron";
+  src: url("vogatron-semibold-webfont.woff2") format("woff2"),
+    url("vogatron-semibold-webfont.woff") format("woff");
+  font-weight: 600;
+  font-style: normal;
+}
+
+.ether-countdown-takeover-banner-body {
+  margin: 0;
+  padding: 0;
+}
+
+.ether-countdown-takeover-banner h1,
+.ether-countdown-takeover-banner h2,
+.ether-countdown-takeover-banner h3,
+.ether-countdown-takeover-banner h4,
+.ether-countdown-takeover-banner h5,
+.ether-countdown-takeover-banner h6 {
+  font-family: "Gilroy";
+  color: #fff;
+  margin: 0;
+}
+
+.ether-countdown-takeover-banner {
+  overflow: hidden;
+  margin: 0 auto;
+}
+
+.ether-countdown-takeover-banner,
+.ether-countdown-takeover-banner * {
+  box-sizing: border-box;
+}
+
+.ether-countdown-takeover-banner {
+  background-image: url("./ether-countdown-bg-mobile.jpg");
+  background-position: center;
+  background-size: cover;
+  background-color: #010005;
+  padding: 100px 20px 46px;
+  text-align: center;
+}
+
+.ether-countdown-takeover-banner__title img {
+  margin: 0 auto;
+  max-width: 400px;
+  width: 100%;
+}
+
+.ether-countdown-takeover-banner__premium {
+  text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  font-family: "Vogatron";
+  font-size: 13px;
+  font-weight: 600;
+  text-align: center;
+  text-transform: uppercase;
+  letter-spacing: 13px;
+
+  background: linear-gradient(
+    51deg,
+    rgba(184, 184, 184, 1) 0%,
+    rgba(244, 244, 244, 1) 100%
+  );
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  backdrop-filter: blur(2px);
+}
+
+.ether-countdown-takeover-banner__date {
+  color: #fff;
+  text-align: center;
+  text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  font-family: Vogatron;
+  font-size: 13px;
+  font-style: normal;
+  font-weight: 600;
+  margin-top: 47px;
+  text-transform: uppercase;
+  background: linear-gradient(51deg, rgba(184,184,184,1) 0%, rgba(244,244,244,1) 100%);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  backdrop-filter: blur(2px);
+}
+
+.ether-countdown-takeover-banner__date p {
+  margin: 0;
+}
+
+.ether-countdown-takeover-banner__date .top {
+  font-size: 28px;
+  line-height: 120%;
+  letter-spacing: 8px;
+  margin-left: 4px;
+}
+
+.ether-countdown-takeover-banner__date .bot {
+  margin-top: 15px;
+  font-size: 60px;
+  line-height: 120%;
+  letter-spacing: 20px;
+  margin-left: 10px;
+}
+
+.ether-counter-takeover-banner__countdown {
+  color: #fff;
+  display: flex;
+  justify-content: space-around;
+  text-align: center;
+  max-width: 640px;
+  margin: 76px auto 0;
+}
+
+.ether-counter-takeover-banner__countdown .label,
+.ether-counter-takeover-banner__countdown .number,
+.ether-counter-takeover-banner__countdown .countdown-expired {
+    background: linear-gradient(51deg, rgba(184,184,184,1) 0%, rgba(244,244,244,1) 100%);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.ether-counter-takeover-banner__countdown .label {
+  font-family: "Gilroy";
+  font-size: 24px;
+  font-weight: 400;
+  line-height: normal;
+  letter-spacing: 0.72px;
+  text-transform: capitalize;
+}
+
+.ether-counter-takeover-banner__countdown .number {
+  font-family: "Vogatron";
+  font-size: 44px;
+  font-style: normal;
+  font-weight: 200;
+  line-height: normal;
+  letter-spacing: 1.32px;
+  text-transform: uppercase;
+}
+
+.ether-counter-takeover-banner__countdown .countdown-expired {
+    font-family: "Gilroy";
+    text-transform: uppercase;
+    text-align: center;
+    width: 100%;
+    font-weight: 600;
+    font-size: 24px;
+    letter-spacing: 20px;
+    margin-left: 10px;
+}
+
+@media (min-width: 768px) {
+  .ether-countdown-takeover-banner__title img {
+    max-width: 724px;
+  }
+
+  .ether-countdown-takeover-banner__premium {
+    font-size: 24px;
+    letter-spacing: 30px;
+    margin-left: 15px;
+  }
+}
+
+@media (min-width: 1200px) {
+  .ether-countdown-takeover-banner {
+    background-image: url("./ether-countdown-bg.jpg");
+  }
+
+  .ether-countdown-takeover-banner__title img {
+    max-width: 1112px;
+  }
+
+  .ether-countdown-takeover-banner__premium {
+    letter-spacing: 48px;
+    margin-left: 24px;
+  }
+}

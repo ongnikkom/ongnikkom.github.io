@@ -8,12 +8,15 @@ export default {
   theme: {
     container: {
       center: true,
-      padding: "1rem",
-      screens: {
-        "2xl": "1400px",
+      padding: {
+        DEFAULT: "1rem",
+        md: "2rem",
       },
     },
     extend: {
+      screens: {
+        "2xl": "1400px",
+      },
       fontFamily: {
         poppins: ["Poppins", "sans-serif"],
         inter: ["Inter", "sans-serif"],
