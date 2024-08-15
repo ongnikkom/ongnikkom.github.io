@@ -4,8 +4,10 @@ import tailwind from "@astrojs/tailwind";
 
 // https://astro.build/config
 export default defineConfig({
-  devToolbar: {
-    enabled: false
-  },
+  site: 'https://ongnikkom.github.io',
+  base: 'portfolio',
   integrations: [react(), tailwind({ applyBaseStyles: false })],
+  devToolbar: {
+    enabled: false,
+  },
 });
